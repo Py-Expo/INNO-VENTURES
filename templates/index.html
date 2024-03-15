@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Nutritional Diet For Athletes</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: linear-gradient(to top right, #00ccff 22%, #00ff00 100%);
+  font-style: italic;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+  font-family:Tahoma;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+  * {box-sizing: border-box}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1; 
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+} 
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="/static/profile.jpg" style="height:350px;" alt="profileimg">
+  <p>Reach your diet goal with our website.</p>
+</div>
+
+<div class="navbar">
+  <a href="C:\Users\raaja\OneDrive\Documents\about.html">About</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>DIET</h2>
+    <img src="/static/diet.jpg" alt="Diet img">
+    <p>Until you get your nutrition right, nothing will change</p>
+    <h3>Easiest Calorie counting app</h3>
+    <img src="/static/calorie.jpg" style="height:175px;" alt="Calorie">
+    <img src="/static/proteins.jpg" style="height:250px;" alt="Proteins">
+    <img src="/static/vitamins.jpg" style="height:175px;" alt="Vitamins">
+    <img src="/static/food.jpg" style="height:250px;" alt="Food">
+  </div>
+  <div class="main">
+    
+    <h5>Superb 100% FREE calorie counter apps.</h5>
+    <img src="/static/palette.jpg" style="height:500px;" alt="Palette">
+    <p>Your KEY to success..</p>
+    <p> Start losing weight in a healthy way with easy to use apps,online tools and support...</p>
+    <br>
+    <h2>HOW IT WORKS!</h2>
+    <h5>People who track food achieve more than double the average weight loss and members lose 3x faster when doing it with friends.This app combines these to create the most powerful solution for healthy,sustainable weight</h5>
+    <img src="/static/app.jpg" style="height:500px;" alt="App">
+    <p>Supportive Community...</p>
+    <p>Over 35 million people have lost weight with our app.Start your weight loss journey today and get access to the world's highest quality food and nutrition database.</p>
+  </div>
+</div>yy
+
+<form action="action_page.php">
+  <div class="container">
+    <h1><centre>Register</centre></h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+
+    <a href="/register">Register</a>
+
+  </div>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="/login">Login</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>
+
+
